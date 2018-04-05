@@ -8,9 +8,14 @@
 # Print out that many copies of the previous message on separate lines. (Hint: the string "\n is the same as
 # pressing the ENTER button)
 
-name = input('Enter your name')
-age = input('Enter your age')
-number = input('Enter number')
 
-for i in range(int(number)):
-    print('You will turn 100 in {}'.format(2018 + (100 - int(age))))
+def ex_1():
+    name = input('Enter your name')
+    age = input('Enter your age')
+    number = input('Enter number')
+
+    for i in range(int(number)):
+        print('Hi, {}.You will turn 100 in {}'.format(name, 2018 + (100 - int(age))))
+
+
+ex_1()

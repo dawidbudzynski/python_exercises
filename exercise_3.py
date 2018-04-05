@@ -11,11 +11,16 @@
 # Ask the user for a number and return a list that contains only elements from the original list a that are smaller
 # than that number given by the user.
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-new_list = []
-user_number = int(input('Enter a number'))
-for number in a:
-    if number < user_number:
-        new_list.append(number)
 
-print(new_list)
+def ex_1():
+    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+    new_list = []
+    user_number = int(input('Enter a number'))
+    for number in a:
+        if number < user_number:
+            new_list.append(number)
+
+    print(new_list)
+
+
+ex_1()
