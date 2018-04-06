@@ -12,8 +12,7 @@
 # than that number given by the user.
 
 
-def ex_1():
-    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+def ex_1(a):
     new_list = []
     user_number = int(input('Enter a number'))
     for number in a:
@@ -23,4 +22,5 @@ def ex_1():
     print(new_list)
 
 
-ex_1()
+my_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+ex_1(my_list)
