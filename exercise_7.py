@@ -3,9 +3,10 @@
 # of this list in it.
 
 
-def ex_1():
-    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+def ex_1(a):
+
     print([i for i in a if i % 2 == 0])
 
 
-ex_1()
+my_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+ex_1(my_list)
