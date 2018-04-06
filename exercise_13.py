@@ -4,6 +4,7 @@
 # where the next number in the sequence is the sum of the previous two
 # numbers in the sequence. The sequence looks like this: 1, 1, 2, 3, 5, 8, 13, …)
 
+
 def fibonacci():
     user_input = int(input('How many numbers?'))
 
@@ -18,5 +19,6 @@ def fibonacci():
         user_input -= 1
 
     return fibonacci_sequence
+
 
 print(fibonacci())
