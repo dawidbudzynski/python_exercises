@@ -7,6 +7,7 @@
 # Use binary search.
 import math
 
+
 def check_list(my_list, check_number):
     new_list = my_list
     new_list_length = len(new_list)
