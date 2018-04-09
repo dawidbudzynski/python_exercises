@@ -9,3 +9,19 @@
 #
 # This will just print the full text of the article to the screen. It will not make it easy to read, so next
 # exercise we will learn how to write this text to a .txt file.
+
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://www.vanityfair.com/style/society/2014/06/monica-lewinsky-humiliation-culture/'
+
+r = requests.get(url)
+r_html = r.text
+
+soup = BeautifulSoup(r_html, 'html.parser')
+all_p = soup.find_all('p')
+
+for paragraph in all_p:
+    print(paragraph.text)
+
+# done
