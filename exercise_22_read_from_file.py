@@ -10,6 +10,8 @@
 #     the scene category. To do this, you’re going to have to remember a bit about string parsing in Python 3. I
 #     talked a little bit about it in this post.
 
+from collections import Counter
+
 
 def my_func():
     with open('nameslist.txt', 'r') as my_file:
@@ -21,6 +23,22 @@ def my_func():
         print(all_names_counted)
 
 
-my_func()
+def read_SUN_database():
+    with open('SUN_file.txt', 'r') as my_file:
+        all_text = my_file.read()
+        all_lines = all_text.split('\n')
+        all_categories = []
+        for line in all_lines:
+            if line[3:-25] != '':
+                all_categories.append(line[3:-25])
 
-# todo extra
+        all_categories_counted = Counter(all_categories)
+
+        for category, value in all_categories_counted.items():
+            print('Category: {}, occurrences: {}'.format(category, value))
+
+
+# my_func()
+read_SUN_database()
+
+# done
