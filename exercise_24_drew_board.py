@@ -18,11 +18,13 @@
 
 
 def drew_board():
-    user_choice = int(input('How big board you want?'))
-    print(' ---' * user_choice)
-    for i in range(user_choice):
-        print('|   ' * user_choice + '|')
-        print(' ---' * user_choice)
+    board_size = int(input('How big board you want?'))
+    print(' ---' * board_size)
+    for i in range(board_size):
+        print('|   ' * board_size + '|')
+        print(' ---' * board_size)
 
 
 drew_board()
+
+# done
