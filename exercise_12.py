@@ -9,3 +9,5 @@ def exe_1(my_list):
 a = [5, 10, 15, 20, 25]
 
 print(exe_1(a))
+
+#done

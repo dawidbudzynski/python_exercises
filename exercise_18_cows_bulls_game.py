@@ -23,8 +23,6 @@ from random import randint
 
 def game():
     winning_number = str(randint(1000, 9999))
-    # cows = 0
-    # bulls = 0
     guesses = 0
     game_ended = False
 
@@ -52,3 +50,5 @@ def game():
 
 
 game()
+
+# done
