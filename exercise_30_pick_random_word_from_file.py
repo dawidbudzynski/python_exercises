@@ -7,4 +7,19 @@
 #
 # Hint: use the Python random library for picking a random word.
 
-#todo
+
+from random import choice
+
+
+def func():
+    my_file = open('sowpods.txt', 'r')
+    all_words = my_file.read().split('\n')
+    my_file.close()
+    random_word = choice(all_words)
+
+    print(random_word)
+
+
+func()
+
+# done
