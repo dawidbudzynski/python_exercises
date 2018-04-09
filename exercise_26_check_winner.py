@@ -18,29 +18,32 @@
 # board there will only be one winner.
 
 
-def check_winner(list1, list2, list3):
+def check_winner(result_list):
     for i in [1, 2]:
-        if list1[0] == i and list1[1] == i and list1[2] == i:
+        if result_list[0][0] == i and result_list[0][1] == i and result_list[0][2] == i:
             print('Player {} won'.format(i))
             quit()
-        elif list2[0] == i and list2[1] == i and list2[2] == i:
+        elif result_list[1][0] == i and result_list[1][1] == i and result_list[1][2] == i:
             print('Player {} won'.format(i))
             quit()
-        elif list3[0] == i and list3[1] == i and list3[2] == i:
+        elif result_list[2][0] == i and result_list[2][1] == i and result_list[2][2] == i:
             print('Player {} won'.format(i))
             quit()
-        elif list1[0] == i and list2[1] == i and list3[2] == i:
+        elif result_list[0][0] == i and result_list[1][1] == i and result_list[2][2] == i:
             print('Player {} won'.format(i))
             quit()
-        elif list1[2] == i and list2[1] == i and list3[0] == i:
+        elif result_list[0][2] == i and result_list[1][1] == i and result_list[2][0] == i:
             print('Player {} won'.format(i))
             quit()
 
     print('No winner')
 
 
-test_list1 = [1, 1, 2]
-test_list2 = [0, 2, 2]
-test_list3 = [2, 0, 1]
+my_game_result = [
+    [1, 2, 1],
+    [0, 1, 2],
+    [2, 0, 1]]
 
-check_winner(test_list1, test_list2, test_list3)
+check_winner(my_game_result)
+
+# done
