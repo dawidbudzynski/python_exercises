@@ -16,4 +16,6 @@ def find_max(number1, number2, number3):
     print(new_max)
 
 
-find_max(100, 2000, 27)
+find_max(0, 20, 16)
+
+# done
