@@ -6,4 +6,13 @@
 #
 # Ask the user to specify the name of the output file that will be saved.
 
-#todo
+
+from exercise_19_beautiful_soup_2 import all_p
+
+file_title = input('How would you like to call this file?')
+open_file = open('{}.txt'.format(file_title), 'w')
+for paragraph in all_p:
+    open_file.write(paragraph.text)
+open_file.close()
+
+# done
