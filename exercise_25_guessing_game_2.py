@@ -25,17 +25,19 @@ def guessing_game(my_range):
     print(computer_guess)
     while game_ended is False:
         user_input = input('higher, lower, ok?')
-        if user_input == 'ok':
+        if user_input in ['ok', 'Ok', 'OK']:
             game_ended = True
             print('Computer won')
-        elif user_input == 'higher':
+        elif user_input in ['HIGHER', 'Higher', 'higher', 'H', 'h']:
             my_min = computer_guess
             computer_guess = floor(my_min + ((my_max - my_min) / 2))
             print(computer_guess)
-        elif user_input == 'lower':
+        elif user_input in ['LOWER', 'Lower', 'lower', 'L', 'l']:
             my_max = computer_guess
             computer_guess = floor(my_min + ((my_max - my_min) / 2))
             print(computer_guess)
 
 
 guessing_game(1000)
+
+# done
