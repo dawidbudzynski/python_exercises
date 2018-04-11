@@ -11,7 +11,7 @@
 from random import choice
 
 
-def func():
+def pick_random_word():
     my_file = open('sowpods.txt', 'r')
     all_words = my_file.read().split('\n')
     my_file.close()
@@ -20,6 +20,6 @@ def func():
     print(random_word)
 
 
-func()
+pick_random_word()
 
 # done
