@@ -17,9 +17,10 @@ def pick_random_word():
     my_file.close()
     random_word = choice(all_words)
 
-    print(random_word)
+    return random_word
 
 
-pick_random_word()
+if __name__ == '__main__':
+    print(pick_random_word())
 
 # done
