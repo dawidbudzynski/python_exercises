@@ -23,6 +23,7 @@ def my_func():
     print('{}\'s birthday is on {}'.format(user_input, my_dictionary[user_input]))
 
 
-my_func()
+if __name__ == '__main__':
+    my_func()
 
 # done
